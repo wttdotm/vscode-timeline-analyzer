@@ -9,6 +9,6 @@
   "author": "Your Name",
   "license": "MIT",
   "bin": {
-    "vscode-history-analyzer": "./main.js"
+    "vscode-timeline-analyzer": "./main.js"
   }
 }

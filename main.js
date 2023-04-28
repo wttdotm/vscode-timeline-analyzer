@@ -65,7 +65,7 @@ function logWorkingPeriods(workingPeriods, relevantProject) {
     }
   });
 
-  console.log(`Hours Worked (${relevantProject})`);
+  console.log(`\n\nHours worked (${relevantProject})`);
   console.log('---------------------');
   
   for (const dateStr in aggregatedPeriods) {
@@ -94,8 +94,10 @@ function askQuestion(query) {
 }
 
 async function main() {
-  console.log('Welcome to the VSCode User History Analyzer!');
-  console.log('---------------------------------------------');
+  console.log('\n------------------------------------------------------------------');
+  console.log('Welcome to the VSCode Timeline Analyzer!');
+  console.log('Use this tool to figure out how much you worked on a given project');
+  console.log('------------------------------------------------------------------');
 
   const defaultHistoryFolder = path.join(process.env.HOME, 'Library/Application Support/Code/User/History');
   const historyFolder = await askQuestion(`\nWhat is the absolute path to your VSCode user history folder? \nPress enter to default to '${defaultHistoryFolder}'\n> `) || defaultHistoryFolder;
@@ -124,6 +126,11 @@ async function main() {
 
   const workingPeriods = createWorkingPeriods(orderedTimeline);
   logWorkingPeriods(workingPeriods, relevantProject);
+
+  console.log('\n\n-----------------------------------------------------------------');
+  console.log('Contribute at https://github.com/wttdotm/vscode-history-analyzer');
+  console.log('- @wttdotm');
+  console.log('-----------------------------------------------------------------\n\n');
 }
 
 main();
