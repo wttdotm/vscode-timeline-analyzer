@@ -1,5 +1,5 @@
 {
-  "name": "vscode-history-analyzer",
+  "name": "vscode-timeline-analyzer",
   "version": "1.0.0",
   "description": "A CLI tool that uses VSCode history files to produce a timeline of work.",
   "main": "index.js",
