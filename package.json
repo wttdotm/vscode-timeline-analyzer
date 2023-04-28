@@ -1,0 +1,14 @@
+{
+  "name": "vscode-history-analyzer",
+  "version": "1.0.0",
+  "description": "A CLI tool that uses VSCode history files to produce a timeline of work.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "bin": {
+    "vscode-history-analyzer": "./main.js"
+  }
+}
