@@ -103,7 +103,7 @@ async function main() {
   const historyFolder = await askQuestion(`\nWhat is the absolute path to your VSCode user history folder? \nPress enter to default to '${defaultHistoryFolder}'\n> `) || defaultHistoryFolder;
 
   const defaultRelevantProject = path.basename(process.cwd());
-  const relevantProject = await askQuestion(`\nWhat is the folder name or file you are trying to analyze? Note: Case insensitive. \nPress enter to default to the name of the current directory: '${defaultRelevantProject}'\n> `) || defaultRelevantProject;
+  const relevantProject = await askQuestion(`\nWhat is the folder name or file you are trying to analyze? Note: Case insensitive, no special characters. \nPress enter to default to the name of the current directory: '${defaultRelevantProject}'\n> `) || defaultRelevantProject;
 
   const defaultDateSince = '6/9/2000';
   const dateSince = await askQuestion(`\nWhen do you want to start analyzing it from in MM/DD/YYYY format? \nPress enter to default to '${defaultDateSince}'\n> `) || defaultDateSince;
