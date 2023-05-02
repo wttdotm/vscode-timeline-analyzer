@@ -128,7 +128,7 @@ async function main() {
   logWorkingPeriods(workingPeriods, relevantProject);
 
   console.log('\n\n-----------------------------------------------------------------');
-  console.log('Contribute at https://github.com/wttdotm/vscode-history-analyzer');
+  console.log('Contribute at https://github.com/wttdotm/vscode-timeline-analyzer');
   console.log('- @wttdotm');
   console.log('-----------------------------------------------------------------\n\n');
 }
